@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tGz-X4-4xr" customClass="LXRepeatClickButton">
+                                <rect key="frame" x="225" y="283" width="151" height="34"/>
+                                <state key="normal" title="RepeatClickButton">
+                                    <color key="titleColor" red="0.23921568630000001" green="0.23921568630000001" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="928-Zy-1DT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JdE-XP-DdK" customClass="LXImagePositionButton">
+                                <rect key="frame" x="228" y="241" width="145" height="22"/>
+                                <color key="backgroundColor" red="0.74509803919999995" green="0.5450980392" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="145" id="EBj-Q5-NS6"/>
+                                    <constraint firstAttribute="height" constant="120" id="bdA-GG-3JQ"/>
+                                </constraints>
+                                <state key="normal" title="图片位置button" image="分享.png">
+                                    <color key="titleColor" red="0.23921568630000001" green="0.23921568630000001" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tGz-X4-4xr" firstAttribute="top" secondItem="JdE-XP-DdK" secondAttribute="bottom" constant="20" id="5aZ-bW-Sbq"/>
+                            <constraint firstItem="JdE-XP-DdK" firstAttribute="centerX" secondItem="tGz-X4-4xr" secondAttribute="centerX" id="7TB-Zq-y4U"/>
+                            <constraint firstItem="tGz-X4-4xr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Wud-Da-hBt"/>
+                            <constraint firstItem="tGz-X4-4xr" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="gSe-EL-7OY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="tGz-X4-4xr" id="Uyf-V0-STK"/>
+                        <outlet property="imageButton" destination="JdE-XP-DdK" id="yOq-xa-to3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="分享.png" width="19" height="22"/>
+    </resources>
+</document>
