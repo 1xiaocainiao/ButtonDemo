@@ -15,7 +15,6 @@
     __weak IBOutlet LXRepeatClickButton *button;
     
     __weak IBOutlet LXImagePositionButton *imageButton;
-    
 }
 
 @end
@@ -29,7 +28,6 @@
     
     imageButton.lx_imagePosition = LXImagePositionButtonCenterTop;
 //    imageButton.lx_spacing = 3;
-    
     // Do any additional setup after loading the view, typically from a nib.
 }
 
